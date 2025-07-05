@@ -1,0 +1,267 @@
+.input-phase {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.phase-header {
+  margin-bottom: 2rem;
+}
+
+.phase-header h2 {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.phase-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.language-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.language-toggle button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  background: white;
+  color: #6b7280;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.language-toggle button.active {
+  background: #7c3aed;
+  color: white;
+  border-color: #7c3aed;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #ef4444;
+}
+
+.form-group input.valid {
+  border-color: #10b981;
+}
+
+.error-message {
+  display: block;
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.form-group small {
+  display: block;
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.url-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.url-input-group input {
+  flex: 1;
+}
+
+.url-input-group button {
+  padding: 0.75rem 1.5rem;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.url-input-group button:hover {
+  background: #6d28d9;
+}
+
+.url-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.url-list li {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: #f9fafb;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.url-list a {
+  flex: 1;
+  color: #3b82f6;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.url-list button {
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.uploaded-images {
+  margin-top: 1rem;
+}
+
+.image-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-preview {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-preview button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.primary-button {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.primary-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.primary-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px dashed #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+input[type="file"]:hover {
+  border-color: #7c3aed;
+}
+
+@media (prefers-color-scheme: dark) {
+  .phase-header h2 {
+    color: #f3f4f6;
+  }
+  
+  .phase-header p {
+    color: #9ca3af;
+  }
+  
+  .form-group label {
+    color: #e5e7eb;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    background: #374151;
+    border-color: #4b5563;
+    color: #f3f4f6;
+  }
+  
+  .language-toggle button {
+    background: #374151;
+    border-color: #4b5563;
+    color: #9ca3af;
+  }
+  
+  .url-list li {
+    background: #374151;
+  }
+  
+  input[type="file"] {
+    border-color: #4b5563;
+  }
+}

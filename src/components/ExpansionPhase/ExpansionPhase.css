@@ -1,0 +1,437 @@
+.expansion-phase {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.phase-header {
+  margin-bottom: 2rem;
+}
+
+.phase-header h2 {
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.phase-header p {
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.input-summary {
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.input-summary h3 {
+  color: #374151;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.summary-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.summary-item strong {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.summary-item p {
+  color: #111827;
+  margin-top: 0.25rem;
+}
+
+.action-area {
+  text-align: center;
+  padding: 3rem 0;
+}
+
+.expand-button {
+  padding: 1rem 3rem;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.expand-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(124, 58, 237, 0.3);
+}
+
+.expanding-status {
+  text-align: center;
+  padding: 3rem;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #e5e7eb;
+  border-top-color: #7c3aed;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.progress-steps {
+  margin-top: 2rem;
+}
+
+.progress-steps .step {
+  color: #9ca3af;
+  margin: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.progress-steps .step.active {
+  color: #7c3aed;
+  font-weight: 500;
+}
+
+.error-message {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  color: #991b1b;
+}
+
+.error-message button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.expanded-result {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.result-header h3 {
+  color: #111827;
+  margin: 0;
+}
+
+.edit-button,
+.save-button,
+.cancel-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-button:hover {
+  border-color: #7c3aed;
+  color: #7c3aed;
+}
+
+.save-button {
+  background: #10b981;
+  color: white;
+  border-color: #10b981;
+  margin-right: 0.5rem;
+}
+
+.cancel-button:hover {
+  background: #f3f4f6;
+}
+
+.result-content {
+  padding: 1.5rem;
+}
+
+.result-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.result-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.result-section h4 {
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.info-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-item .label {
+  color: #6b7280;
+  min-width: 140px;
+  font-size: 0.9rem;
+}
+
+.info-item .value {
+  color: #111827;
+  flex: 1;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag,
+.domain-tag,
+.component-tag,
+.browser-tag,
+.tech-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #f3f4f6;
+  color: #374151;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.tag.primary {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+.domain-tag {
+  background: #dbeafe;
+  color: #3b82f6;
+}
+
+.component-tag {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.browser-tag {
+  background: #e0e7ff;
+  color: #4f46e5;
+}
+
+.tech-tag {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.pages-list {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.page-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.page-item h5 {
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.page-item .purpose {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.components {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.principles h5 {
+  color: #374151;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.tech-specs {
+  display: grid;
+  gap: 1rem;
+}
+
+.spec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.browser-list,
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.edit-mode {
+  padding: 1.5rem;
+}
+
+.edit-section {
+  margin-bottom: 1.5rem;
+}
+
+.edit-section h4 {
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.edit-field {
+  margin-bottom: 1rem;
+}
+
+.edit-field label {
+  display: block;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.edit-field input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+.edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.phase-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  background: #f9fafb;
+}
+
+.next-button {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.next-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+.next-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (prefers-color-scheme: dark) {
+  .phase-header h2 {
+    color: #f3f4f6;
+  }
+  
+  .phase-header p {
+    color: #9ca3af;
+  }
+  
+  .input-summary {
+    background: #374151;
+  }
+  
+  .input-summary h3 {
+    color: #f3f4f6;
+  }
+  
+  .summary-item p {
+    color: #e5e7eb;
+  }
+  
+  .expanded-result {
+    background: #1f2937;
+    border-color: #374151;
+  }
+  
+  .result-header {
+    border-color: #374151;
+  }
+  
+  .result-section {
+    border-color: #374151;
+  }
+  
+  .result-section h4 {
+    color: #f3f4f6;
+  }
+  
+  .info-item .value {
+    color: #e5e7eb;
+  }
+  
+  .page-item {
+    background: #374151;
+    border-color: #4b5563;
+  }
+  
+  .page-item h5 {
+    color: #f3f4f6;
+  }
+  
+  .phase-actions {
+    background: #374151;
+  }
+  
+  .edit-button,
+  .cancel-button {
+    background: #374151;
+    border-color: #4b5563;
+    color: #e5e7eb;
+  }
+}
